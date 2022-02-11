@@ -1,4 +1,4 @@
-package project.base;
+package project.model.base;
 
 public abstract class Person {
 

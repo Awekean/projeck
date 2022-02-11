@@ -1,8 +1,8 @@
 package project.model;
 
-import project.base.Address;
-import project.base.Employee;
-import project.base.Person;
+import project.model.base.Address;
+import project.model.base.Employee;
+import project.model.base.Person;
 import project.constant.Constant;
 
 import java.util.List;

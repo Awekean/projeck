@@ -1,8 +1,8 @@
 package project.model;
 
-import project.base.Address;
-import project.base.Employee;
-import project.base.Person;
+import project.model.base.Address;
+import project.model.base.Employee;
+import project.model.base.Person;
 import project.constant.Constant;
 
 public class Teacher extends Person implements Employee {
@@ -34,6 +34,7 @@ public class Teacher extends Person implements Employee {
 
     @Override
     public double salary() {
+
         return houseSalary*workHouse*(1- Constant.FSZN-Constant.NDFL);
     }
 

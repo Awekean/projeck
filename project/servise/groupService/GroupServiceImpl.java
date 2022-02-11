@@ -19,7 +19,7 @@ public class GroupServiceImpl implements GroupService {
     }
 
     @Override
-    public void addStudentToGroup(Student student) {
+    public  void addStudentToGroup(Student student) {
         group.getStudentList().add(student);
     }
 

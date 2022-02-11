@@ -1,7 +1,7 @@
 package project.model;
 
-import project.base.Address;
-import project.base.Person;
+import project.model.base.Address;
+import project.model.base.Person;
 
 public class Student extends Person {
     public Student(String firstName, String lastName, String gender, int age, Address address) {

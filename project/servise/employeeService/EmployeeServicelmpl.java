@@ -1,8 +1,8 @@
 package project.servise.employeeService;
 
-import project.base.Employee;
-import project.lists.listEmployee.ListEmployee;
-import project.lists.listGroup.ListGroup;
+import project.model.base.Employee;
+import project.repositories.listEmployee.ListEmployee;
+import project.repositories.listGroup.ListGroup;
 import project.model.Teacher;
 
 import java.util.List;

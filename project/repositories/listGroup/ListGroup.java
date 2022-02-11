@@ -1,4 +1,4 @@
-package project.lists.listGroup;
+package project.repositories.listGroup;
 
 import project.model.Group;
 

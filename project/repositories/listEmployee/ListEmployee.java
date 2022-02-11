@@ -1,6 +1,6 @@
-package project.lists.listEmployee;
+package project.repositories.listEmployee;
 
-import project.base.Employee;
+import project.model.base.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
