@@ -8,10 +8,9 @@ import project.model.Teacher;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class EmployeeServicelmpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService {
 
     private ListEmployee listEmployee;
-    private ListGroup listGroup;
 
     public void init(ListEmployee listEmployee) {
         this.listEmployee = listEmployee;

@@ -10,7 +10,7 @@ public class TeacherToMethodist implements Converter<Methodist,Teacher>{
         Converter<Methodist,Teacher> teacherConverter = tm -> new Methodist(t.getFirstName()
                 ,t.getLastName()
                 ,t.getGender()
-                ,t.getDateOfBirth()
+                ,t.getAge()
                 ,t.getAddress());
         return teacherConverter.convert(t);
     }

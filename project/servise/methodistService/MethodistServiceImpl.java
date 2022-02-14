@@ -7,6 +7,7 @@ public class MethodistServiceImpl implements MethodistService {
 
     private Methodist methodist;
 
+    @Override
     public void init(Methodist methodist) {
         this.methodist = methodist;
     }

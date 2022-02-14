@@ -1,18 +1,19 @@
 package project.servise.parser;
 
-import project.repositories.listStudent.ListStudent;
+import project.model.Student;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
 public class Parser {
 
+    public static void parser() throws IOException {
 
-    public static void wwpes() throws IOException {
-
+        try{
         FileReader fr = new FileReader("student.txt");
         BufferedReader bf = new BufferedReader(fr);
 
@@ -21,12 +22,19 @@ public class Parser {
         while((st =bf.readLine())!=null) {
 
             StringTokenizer stn = new StringTokenizer(st);
-            String wq = stn.nextToken();
-            String ww = stn.nextToken();
-            int we = Integer.parseInt(stn.nextToken());
-            StudentParser studentParser = new StudentParser(wq,ww,we);
-            System.out.println(wq + " " + ww + " " + we);
-            ListStudent.add(studentParser);
+
+            String firstName = stn.nextToken();
+            String lastName = stn.nextToken();
+            int age = Integer.parseInt(stn.nextToken());
+
+            Student studentParser = new Student(firstName,lastName,age);
+
+        }
+            fr.close();
+            bf.close();
+
+        }catch(IOException e){
+        e.printStackTrace();
         }
     }
 }

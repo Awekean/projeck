@@ -1,5 +1,6 @@
 package project.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
@@ -11,12 +12,12 @@ public class Group {
     private List<Student> studentList;
     private Teacher teacher;
 
-    public Group(String groupName, int course, int yearOfAdmission, int yearOfEnding, List<Student> studentList, Teacher teacher) {
+    public Group(String groupName, int course, int yearOfAdmission, int yearOfEnding, Teacher teacher) {
         this.groupName = groupName;
         this.course = course;
         this.yearOfAdmission = yearOfAdmission;
         this.yearOfEnding = yearOfEnding;
-        this.studentList = studentList;
+        this.studentList = new ArrayList<>();
         this.teacher = teacher;
     }
 

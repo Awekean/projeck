@@ -2,10 +2,10 @@ package project.model.base;
 
 public class Address {
 
-    String cite;
-    String street;
-    int numberHouse;
-    int numberApartment;
+    private String cite;
+    private String street;
+    private int numberHouse;
+    private int numberApartment;
 
     public Address(String cite, String street, int numberHouse, int numberApartment) {
         this.cite = cite;
